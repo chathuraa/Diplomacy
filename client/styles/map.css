@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
+.army {
+  cursor: pointer;
+}
+.fleet {
+  cursor: pointer;
+}
+.titleSection {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  font-family: 'Alfa Slab One', cursive;
+}
+.titleSection h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 72px;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.6);
+}
+.count-down-container {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  padding-right: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+  background-color: rgba(30, 30, 30, 0.5);
+  font-family: 'Fira Mono', ;
+}
+.count-down-container h1 {
+  font-family: 'Fira Mono', ;
+  font-size: 72px;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.6);
+}
+#logo {
+  height: 56px;
+  width: 56px;
+  margin-top: -40px;
+  margin-left: -15px;
+  margin-right: 0px;
+  display: inline;
+}
+.title-h1 {
+  display: inline;
+}

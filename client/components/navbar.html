@@ -1,0 +1,15 @@
+<template name="navbar">
+  <div class="floating-nav-bar" id="navbar">
+    {{#if loggedin}}
+    {{> logoutButton}}
+    {{else}}
+    {{> loginButton}}
+    {{/if}}
+
+    {{> mapZoomInButton}}
+    {{> mapZoomOutButton}}
+    {{> chatButton}}
+    {{> gameLobby}}
+  </div>
+
+</template>
