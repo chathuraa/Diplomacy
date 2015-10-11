@@ -1,0 +1,37 @@
+<template name="game_position">
+  <h3>Position :: <span>{{nation}} ({{type}}) - {{province}}</span></h3>
+
+    {{#if positionOrder _id}}
+      {{#with positionOrder _id}}
+        <ul>
+          <li>
+            {{directive}}: {{position}} - <b>{{type}}</b> {{destination}} {{#if nation}}({{nation}}){{/if}}
+            <a href="#" id="cancelOrder">Cancel</a>
+          </li>
+        </ul>
+      {{/with}}
+    {{else}}
+    <br />
+      <b>Move:</b>
+      <select id="move_{{_id}}">
+        {{#each moves}}
+          <option value="{{abbreviation}}">
+             {{abbreviation}} - {{name}} ({{type}})
+          </option>
+        {{/each}}
+      </select>
+      <a href="#" id="selectOrderMove">Select</a>
+        {{#each s in support}}
+          <br />
+          <b>Support:</b> {{s.province}} ({{s.nation}}) <b>{{s.type}}</b>
+          <select id="support_{{_id}}">
+            {{#each s.for}}
+              <option value="{{this}}">{{from}} - {{to}} ({{type}})</option>
+            {{/each}}
+          </select>
+          <a href="#" id="selectOrderSupport">Select</a>
+        {{/each}}
+
+    {{/if}}
+
+</template>

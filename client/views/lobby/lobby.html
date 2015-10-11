@@ -1,0 +1,22 @@
+<template name="games_lobby">
+<h2>Games</h2>
+
+<h3>Your Games</h3>
+<ul>
+  {{#each yourGames}}
+    <li><a href="{{pathFor 'game'}}">{{_id}}</a></li>
+    {{else}}
+      <li><em>No Games</em></li>
+  {{/each}}
+</ul>
+
+<h3>Open Games</h3>
+<ul>
+  {{#each openGames}}
+    <li>{{_id}}</li>
+  {{else}}
+    <li><em>No Games</em></li>
+  {{/each}}
+</ul>
+
+</template>

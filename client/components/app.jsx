@@ -1,3 +1,10 @@
+Template.app.onCreated(function() {
+  var instance = this;
+  instance.subscribe('game');
+  instance.subscribe('game_positions');
+  instance.subscribe('game_orders');
+});
+
 Template
   .app
   .onRendered(function() {
