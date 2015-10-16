@@ -459,7 +459,7 @@ Map = {
 		{
 			"id": 25,
 			"name": "London",
-			"abbrev": "LND",
+			"abbrev": "LON",
 			"type": "land",
 			"naval": true,
 			"moveTo": {
@@ -1048,7 +1048,7 @@ Map = {
 		},
 		{
 			"id": 61,
-			"name": "Saint Petersburg",
+			"name": "St Petersburg",
 			"abbrev": "STP",
 			"type": "land",
 			"naval": false,
